@@ -1,5 +1,5 @@
 <!-- 
-    BEM(block eement modifier) : 쉽게 읽히는 css
+    BEM(block element modifier) : 쉽게 읽히는 css
     id class 인지 헷갈려서 그냥 다 class로 바꾸자
  -->
 
@@ -10,28 +10,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to kokoatalk</title>
+    <title>Welcome to Kokoa Clone</title>
 </head>
 
 <body>
-    <div id="status-bar">
-        <div class="status-bar__column">
-            <!-- 클래스명이 흔해서 저따구로 씀 __로 이어져 있기 때문에 하나의 클래스명-->
-            <span>No service</span>
-            <i class="fas fa-wifi"></i>
-            <!-- i는 icon의 줄임말 -->
-
-        </div>
-        <div class="status-bar__column">
-            <span> 10:26</span>
-        </div>
-        <div class="status-bar__column">
-            <span>110%</span>
-            <i class="fas fa-battery-three-quarters"></i>
-            <i class="fas fa-bolt"></i>
-        </div>
+<div class="status-bar">
+    <div class="status-bar__column">
+        <span>No service</span>
+        <i class="fas fa-wifi"></i>
     </div>
-    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+    <div class="status-bar__column">
+        <span> 10:26</span>
+    </div>
+    <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-three-quarters"></i>
+        <i class="fas fa-bolt"></i>
+    </div>
+</div>
+<header class="welcome-header">
+    <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+    <p class="welcome-header__text">If you have a Kokoa Account, log in with your email or phone number.</p>
+</header>
+
+<form id="login-form">
+    <input type="text" placeholder="Email or phone number"/>
+    <input type="password" placeholder="Password" />
+    <input type="submit" value="Log in"/>
+    <a href="#">Find Kokoa Account or Password</a>
+</form>
+
+
+
+<script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 
 </body>
 
