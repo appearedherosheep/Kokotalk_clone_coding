@@ -5,6 +5,11 @@
   background-color: #f9f9fa;
   padding: 20px 50px;
   box-sizing: border-box;
+  /*width를 100%준 상태에서 padding을 줬기 때문에 박스
+  사이즈는 유지하면서 옆에 padding을 위한 공간 늘림
+  따라서 점 세개가 안보였던것
+  box-sizing : border-box는 padding 신경쓰지 말고
+  박스 사이즈 늘리지 말라고 말해주는것 */
   border-top: 1px solid rgbal(121, 121, 121, 0.3);
 }
 
@@ -14,5 +19,36 @@
 }
 
 .nav__link {
+  position: relative;
   color: #2e363e;
+}
+
+.nav__notification {
+  background-color: tomato;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  left: 15px;
+  bottom: 13px;
+}
+
+.nav__link__notification {
+  background-color: tomato;
+  color: tomato;
+  width: 7px;
+  height: 7px;
+  border-radius: 3.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 0;
+  left: 28px;
+  bottom: 28px;
 }
