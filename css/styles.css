@@ -8,7 +8,9 @@
 @import "components/screen-header.css";
 /* Screens */
 @import "screens/login.css";
+@import "screens/friends.css";
 
 body {
   font-family: -apple-system, "Open Sans";
+  color: #2e363e;
 }
